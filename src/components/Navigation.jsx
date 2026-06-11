@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Cake } from 'lucide-react'
 import './Navigation.css'
 
 export default function Navigation({ scrollY, menuOpen, setMenuOpen }) {
@@ -12,7 +13,7 @@ export default function Navigation({ scrollY, menuOpen, setMenuOpen }) {
     <>
       <nav id="nav" className={isScrolled ? 'scrolled' : ''}>
         <a href="#" className="nav-logo">
-          <div className="nav-logo-icon">🍰</div>
+          <div className="nav-logo-icon"><Cake size={22} color="white" strokeWidth={2} /></div>
           <div className="nav-logo-text">
             Urmi Kwality Bakery
             <span>उर्मी क्वालिटी बेकरी · Est. 2002</span>
