@@ -1,13 +1,13 @@
 /* ===== DESIGN TOKENS ===== */
 :root {
-  --cream:    #FDF4E7;
-  --warm:     #F5D8A8;
-  --gold:     #C8701A;
-  --cocoa:    #3D1C02;
+  --cream:    #FFF8F0;
+  --warm:     #FFEACF;
+  --gold:     #E85D04;
+  --cocoa:    #8B5E3C;
   --sage:     #2D4A3E;
-  --berry:    #E05B40;
-  --text:     #3D1C02;
-  --muted:    #7A5C44;
+  --berry:    #D9480F;
+  --text:     #2D2D2D;
+  --muted:    #6B6B6B;
 
   --font-display: 'Cormorant Garamond', serif;
   --font-section: 'DM Serif Display', serif;
@@ -185,14 +185,14 @@ body {
 }
 
 .btn-primary {
-  background: var(--gold);
+  background: var(--berry);
   color: white;
-  box-shadow: 0 8px 24px rgba(200, 132, 58, 0.35);
+  box-shadow: 0 8px 24px rgba(217, 72, 15, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(200, 132, 58, 0.45);
+  box-shadow: 0 14px 32px rgba(217, 72, 15, 0.45);
 }
 
 .btn-secondary {

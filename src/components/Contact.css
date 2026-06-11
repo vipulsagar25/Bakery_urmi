@@ -59,7 +59,8 @@
 
 .contact-info-value {
   font-size: 0.85rem;
-  color: var(--berry);
+  color: var(--cream);
+  opacity: 0.9;
   line-height: 1.6;
 }
 
@@ -71,7 +72,8 @@
 
 .hours-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 24px;
   align-items: center;
   font-size: 0.85rem;
 }
@@ -81,7 +83,8 @@
 }
 
 .hours-row .time {
-  color: var(--gold);
+  color: var(--warm);
+  font-weight: 600;
 }
 
 .hours-row.today {

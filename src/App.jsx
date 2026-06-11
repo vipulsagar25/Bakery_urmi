@@ -18,8 +18,17 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLoader(false), 1800)
-    return () => clearTimeout(timer)
+    const handleLoad = () => setShowLoader(false)
+    if (document.readyState === 'complete') {
+      setShowLoader(false)
+    } else {
+      window.addEventListener('load', handleLoad)
+      const timer = setTimeout(() => setShowLoader(false), 600)
+      return () => {
+        window.removeEventListener('load', handleLoad)
+        clearTimeout(timer)
+      }
+    }
   }, [])
 
   useEffect(() => {

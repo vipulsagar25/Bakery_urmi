@@ -43,7 +43,11 @@ export default function Footer() {
           <div className="footer-col-title">Contact</div>
           <p className="footer-info">
             <strong style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><MapPin size={16} /> Visit us:</strong><br/>
-            Sahibabad, Ghaziabad
+            <a href="https://maps.google.com/?q=27+Naven+Park+Sahibabad+Ghaziabad" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>
+              27, Naven Park, Jindal Mkt, Sahibabad<br/>
+              Dr Radha Krishnan Marg, Sector 3<br/>
+              Rajendra Nagar, Ghaziabad, UP 201005
+            </a>
           </p>
           <p className="footer-info">
             <strong style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Phone size={16} /> Call:</strong><br/>
@@ -70,7 +74,7 @@ export default function Footer() {
       <div className="footer-divider"></div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 Urmi Kwality Bakery. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Urmi Kwality Bakery. All rights reserved.</p>
         <p className="footer-credit" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>Built with <Heart size={14} color="var(--berry)" fill="var(--berry)" /> for Sahibabad</p>
       </div>
     </footer>

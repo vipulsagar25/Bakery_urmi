@@ -62,7 +62,7 @@ export default function Contact() {
             <div className="contact-info-icon" style={{ color: 'var(--gold)', display: 'flex', alignItems: 'center' }}><Phone size={28} /></div>
             <div>
               <div className="contact-info-label">Phone / WhatsApp</div>
-              <div className="contact-info-value" style={{ fontSize: '1.2rem', color: 'var(--gold)' }}>+91 99991 14013</div>
+              <div className="contact-info-value" style={{ fontSize: '1.2rem', color: 'var(--warm)', fontWeight: '600' }}>+91 99991 14013</div>
             </div>
           </div>
           <div className="contact-info-item">
