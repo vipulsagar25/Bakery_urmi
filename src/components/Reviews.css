@@ -153,9 +153,47 @@
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .reviews-header {
+    margin-bottom: 36px;
+  }
+
+  .review-card {
+    width: 320px;
+  }
+}
+
 @media (max-width: 600px) {
   .reviews-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .rating-num {
+    font-size: 3.5rem;
+  }
+
+  .rating-big {
+    gap: 16px;
+  }
+
+  .review-card {
+    width: 280px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .reviews-marquee-track {
+    animation-duration: 35s;
+  }
+
+  .review-text {
+    font-size: 0.83rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
