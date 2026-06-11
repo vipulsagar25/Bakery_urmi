@@ -1,0 +1,115 @@
+/* ===== SPECIALTY ===== */
+#specialty {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  align-items: center;
+}
+
+.specialty-list {
+  display: grid;
+  gap: 20px;
+}
+
+.specialty-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(200, 132, 58, 0.08);
+  transition: transform 0.3s var(--ease-bounce);
+  cursor: default;
+}
+
+.specialty-item:hover {
+  transform: translateX(10px);
+}
+
+.specialty-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  flex-shrink: 0;
+}
+
+.specialty-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--cocoa);
+}
+
+.specialty-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.specialty-visual {
+  position: relative;
+  height: 480px;
+}
+
+.spec-blob {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 40%, rgba(200, 132, 58, 0.15), rgba(74, 124, 89, 0.08) 60%, transparent);
+  border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%;
+  animation: blobMorph 8s ease-in-out infinite;
+}
+
+.spec-items-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.spec-mini {
+  background: white;
+  border-radius: 20px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(200, 132, 58, 0.12);
+  transition: transform 0.3s var(--ease-bounce);
+}
+
+.spec-mini:hover {
+  transform: scale(1.06) rotate(-2deg);
+}
+
+.spec-mini .emoji {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.spec-mini .name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cocoa);
+}
+
+.spec-mini.tall {
+  grid-row: span 2;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  #specialty {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-visual {
+    height: 320px;
+    order: -1;
+  }
+}

@@ -1,0 +1,147 @@
+/* ===== MENU ===== */
+#menu {
+  background: var(--cocoa);
+}
+
+#menu .section-title {
+  color: var(--cream);
+}
+
+#menu .section-label {
+  color: var(--gold);
+}
+
+#menu .section-sub {
+  color: var(--berry);
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 36px 0 40px;
+  justify-content: center;
+}
+
+.tab {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(200, 132, 58, 0.3);
+  color: var(--berry);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s;
+  background: transparent;
+  font-family: var(--font-body);
+}
+
+.tab.active,
+.tab:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.menu-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 132, 58, 0.15);
+  border-radius: 20px;
+  padding: 28px 24px;
+  transition: transform 0.3s var(--ease-bounce), background 0.3s, border-color 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(200, 132, 58, 0.1), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(200, 132, 58, 0.4);
+}
+
+.menu-card:hover::before {
+  opacity: 1;
+}
+
+.menu-card-icon {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.menu-card-img-wrap {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-card-img {
+  transform: scale(1.05);
+}
+
+.menu-card-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.menu-card-desc {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.menu-card-price {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.menu-card-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--gold);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .menu-tabs {
+    justify-content: flex-start;
+  }
+}
