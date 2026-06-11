@@ -133,11 +133,28 @@
 }
 
 @media (max-width: 600px) {
+  #footer {
+    padding: 40px 5vw 20px;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
   }
 
   .footer-col-title {
-    margin-top: 12px;
+    margin-top: 8px;
+  }
+
+  .footer-bottom {
+    font-size: 0.78rem;
   }
 }

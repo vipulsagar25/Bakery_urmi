@@ -139,15 +139,108 @@ body {
   transform: translateX(0);
 }
 
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 8vw;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-section);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: var(--cocoa);
+  margin-bottom: 12px;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-bounce);
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: white;
+  box-shadow: 0 8px 24px rgba(200, 132, 58, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(200, 132, 58, 0.45);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--cocoa);
+  border: 1.5px solid rgba(61, 28, 2, 0.25);
+}
+
+.btn-secondary:hover {
+  background: var(--cocoa);
+  color: white;
+  border-color: var(--cocoa);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   html {
     font-size: 15px;
+  }
+
+  .section {
+    padding: 60px 6vw;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
   }
 }
 
 @media (max-width: 600px) {
   html {
     font-size: 14px;
+  }
+
+  .section {
+    padding: 48px 5vw;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+
+  .section-sub {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 0.88rem;
   }
 }

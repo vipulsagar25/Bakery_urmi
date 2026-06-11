@@ -195,6 +195,8 @@
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 32px;
   }
 
   .contact-form {
@@ -203,6 +205,43 @@
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-form h3 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+
+  .contact-visual-img {
+    height: 180px;
+  }
+
+  .contact-info-item {
+    gap: 12px;
+  }
+
+  .contact-info-icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-info-label {
+    font-size: 0.9rem;
+  }
+
+  .hours-table {
+    gap: 4px;
+  }
+
+  .contact-grid {
+    gap: 28px;
   }
 }
 

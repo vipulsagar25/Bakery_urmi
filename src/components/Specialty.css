@@ -106,10 +106,46 @@
 @media (max-width: 900px) {
   #specialty {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .specialty-visual {
     height: 320px;
     order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Hide the decorative visual grid on small mobile — takes too much space */
+  .specialty-visual {
+    display: none;
+  }
+
+  #specialty {
+    gap: 20px;
+  }
+
+  .specialty-item {
+    padding: 16px 18px;
+    gap: 14px;
+  }
+
+  .specialty-icon-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .specialty-title {
+    font-size: 0.9rem;
+  }
+
+  .specialty-desc {
+    font-size: 0.75rem;
+  }
+
+  .specialty-list {
+    gap: 12px;
   }
 }
